@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "voidvisuals",
+  "version": "${version}",
+  "name": "Void Visuals",
+  "description": "Client-side visuals in red. Press Right Shift to open the menu.",
+  "authors": [
+    "akamevoid"
+  ],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/voidvisuals/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.akamevoid.voidvisuals.VoidVisualsClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "mixins": [
+    {
+      "config": "voidvisuals.armor.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "voidvisuals.glint.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "voidvisuals.hit.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "voidvisuals.outline.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "voidvisuals.sky.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "voidvisuals.sound.mixins.json",
+      "environment": "client"
+    }
+  ]
+}
